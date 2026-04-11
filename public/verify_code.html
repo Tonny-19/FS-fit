@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIT - Vérification code SMS</title>
+  <link rel="stylesheet" href="register_shared.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="logo-box"><span>FS</span></div>
+  <p class="site-name">FSfit galerie house</p>
+
+  <p class="otp-instruction">validez le code à 5 chiffres que nous avons envoyé par sms :</p>
+
+  <div class="otp-wrapper">
+    <input type="text" class="otp-box" maxlength="1" id="o1" />
+    <input type="text" class="otp-box" maxlength="1" id="o2" />
+    <input type="text" class="otp-box" maxlength="1" id="o3" />
+    <input type="text" class="otp-box" maxlength="1" id="o4" />
+    <input type="text" class="otp-box" maxlength="1" id="o5" />
+  </div>
+
+  <button class="btn-red" onclick="window.location.href='catalogue_artiste.html'">CREATE</button>
+
+  <span class="signup-link" onclick="window.location.href='login_artiste.html'">Sign Up</span>
+
+  <script>
+    const boxes = document.querySelectorAll('.otp-box');
+    boxes.forEach((box, i) => {
+      box.addEventListener('input', () => {
+        if (box.value && i < boxes.length - 1) {
+          boxes[i + 1].focus();
+        }
+      });
+      box.addEventListener('keydown', (e) => {
+        if (e.key === 'Backspace' && !box.value && i > 0) {
+          boxes[i - 1].focus();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

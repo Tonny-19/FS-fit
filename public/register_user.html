@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIT - Créer compte utilisateur</title>
+  <link rel="stylesheet" href="register_shared.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header avec flèche retour -->
+  <div class="page-header">
+    <div class="back-row">
+      <a class="back-arrow" onclick="history.back()">&#8249;</a>
+      <span class="back-title">Sign Up</span>
+    </div>
+    <div class="header-line"></div>
+  </div>
+
+  <p class="page-title">Creer un<br>compte utilisateur</p>
+
+  <div style="margin-top:5rem; display:flex; flex-direction:column; align-items:center; width:100%;">
+    <div class="logo-box"><span>FS</span></div>
+    <p class="site-name">FSfit galerie house</p>
+
+    <div class="form-wrapper">
+      <input type="text" class="field" placeholder="Username" />
+      <input type="email" class="field" placeholder="email" />
+      <input type="password" class="field" placeholder="password" />
+      <input type="password" class="field" placeholder="Confirm Password" />
+
+      <div class="bottom-row" style="justify-content: space-between;">
+        <div class="checkbox-wrap">
+          <input type="checkbox" id="remember" />
+        </div>
+        <button class="btn-red" onclick="window.location.href='catalogue_user.html'">CREATE AN ACCOUNT</button>
+        <span class="remember-text">Remember Password</span>
+      </div>
+    </div>
+  </div>
+
+  <span class="signup-link" onclick="window.location.href='login_utilisateur.html'">Sign Up</span>
+
+</body>
+</html>

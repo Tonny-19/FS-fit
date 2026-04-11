@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIT - Connexion Artiste</title>
+  <link rel="stylesheet" href="login_shared.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <p class="page-title">connexion à un<br>compte artiste</p>
+
+  <div class="center-wrapper">
+
+    <div class="logo-circle">
+      <div class="logo-inner">
+        <img src="images/profile.jpg" alt="photo profil" class="profile-img" onerror="this.style.display='none'" />
+        <div class="logo-text">
+          <span class="fs-text">fs</span>
+          <span class="fit-text">FIT</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-wrapper">
+
+      <div class="input-group">
+        <span class="icon">&#9899;</span>
+        <input type="text" placeholder="Email or Phone" />
+      </div>
+
+      <div class="input-group">
+        <span class="icon">&#128274;</span>
+        <input type="password" placeholder="Password" />
+      </div>
+
+      <div class="bottom-card">
+        <p class="forgot">Forgot Password?</p>
+        <button class="btn-login" onclick="window.location.href='catalogue_artiste.html'">Login</button>
+        <span class="separator">or</span>
+        <button class="btn-create" onclick="window.location.href='register_artiste.html'">Create an account</button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
