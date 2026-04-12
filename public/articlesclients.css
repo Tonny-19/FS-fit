@@ -1,0 +1,82 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: sans-serif;
+      background: #4a6b5e;
+      min-height: 100vh;
+    }
+
+    /* barre de navigation */
+    .navbar {
+      background: #3d5c50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 40px;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 24px;
+      padding: 8px 16px;
+      gap: 8px;
+      width: 340px;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      font-size: 15px;
+      width: 100%;
+    }
+
+    .nav-icons {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .icon {
+      width: 28px;
+      height: 28px;
+      fill: white;
+      cursor: pointer;
+    }
+
+    /* emplacement des ouevres */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding: 24px 40px;
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product-img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .product-img.placeholder {
+      background: #8a7d68;
+    }
+
+    .product-info {
+      text-align: center;
+      padding: 8px 0 4px;
+    }
+
+    .product-name,
+    .product-price {
+      color: #d9d0c5;
+      font-size: 13px;
+    }
