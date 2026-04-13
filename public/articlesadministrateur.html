@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Mode édition</title>
+  <link rel="stylesheet" href="articlesadministrateur.css" />
+  <script src="administrateur.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <button class="add-btn">+</button>
+    <div class="search-bar">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+           stroke="#999" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="text" placeholder="Rechercher...">
+    </div>
+    <div class="nav-icons">
+      <svg class="icon" viewBox="0 0 24 24">
+        <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4
+                 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6
+                 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+      </svg>
+      <svg class="icon" viewBox="0 0 24 24">
+        <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10
+                 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM5.2
+                 4H2V2H0v2h2l3.6 7.6-1.4 2.5C4 14.7 4 15.3 4.1
+                 16H20v-2H5.9l1-1.8H18c.7 0 1.4-.4 1.7-1l3.5-6.4C23.6
+                 4 23.2 3 22.3 3H5.2z"/>
+      </svg>
+    </div>
+  </nav>
+
+  <div class="grid">
+
+    <div class="card" onclick="selectCard(this)">
+      <img class="card-img" src="URL_IMAGE_1" alt="jean">
+      <button class="btn-delete">❌</button>
+      <button class="btn-edit">✏️</button>
+    </div>
+
+    <div class="card" onclick="selectCard(this)">
+      <img class="card-img" src="URL_IMAGE_2" alt="jean">
+      <button class="btn-delete">❌</button>
+      <button class="btn-edit">✏️</button>
+    </div>
+
+    <!-- Carte sélectionnée (contour violet) -->
+    <div class="card selected" onclick="selectCard(this)">
+      <img class="card-img" src="URL_IMAGE_3" alt="jean">
+      <button class="btn-delete">❌</button>
+      <button class="btn-edit">✏️</button>
+    </div>
+
+    <!-- Carte placeholder (sans image) -->
+    <div class="card" onclick="selectCard(this)">
+      <img class="card-img" src="URL_IMAGE_4" alt="shirt">
+      <button class="btn-delete">❌</button>
+      <button class="btn-edit">✏️</button>
+    </div>
+
+    <!-- Carte avec prix affiché -->
+    <div class="card" onclick="selectCard(this)">
+      <img class="card-img" src="URL_IMAGE_4" alt="shirt">
+      <div class="price-tag">$72</div>
+      <button class="btn-delete">❌</button>
+      <button class="btn-edit">✏️</button>
+    </div>
+
+    <div class="card" onclick="selectCard(this)">
+      <img class="card-img" src="URL_IMAGE_4" alt="shirt">
+      <div class="price-tag">$72</div>
+      <button class="btn-delete">❌</button>
+      <button class="btn-edit">✏️</button>
+    </div>
+
+    <div class="card" onclick="selectCard(this)">
+      <img class="card-img" src="URL_IMAGE_4" alt="shirt">
+      <div class="price-tag">$72</div>
+      <button class="btn-delete">❌</button>
+      <button class="btn-edit">✏️</button>
+    </div>
+
+    <div class="card" onclick="selectCard(this)">
+      <img class="card-img" src="URL_IMAGE_4" alt="shirt">
+      <div class="price-tag">$72</div>
+      <button class="btn-delete">❌</button>
+      <button class="btn-edit">✏️</button>
+    </div>
+
+    <div class="card" onclick="selectCard(this)">
+      <img class="card-img" src="URL_IMAGE_4" alt="shirt">
+      <div class="price-tag">$72</div>
+      <button class="btn-delete">❌</button>
+      <button class="btn-edit">✏️</button>
+    </div>
+
+  </div>
+
+
+</body>
+</html>

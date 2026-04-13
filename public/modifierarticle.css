@@ -1,0 +1,137 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: sans-serif;
+      background: #4a6b5e;
+      min-height: 100vh;
+      padding: 32px 40px;
+    }
+
+    /* ── En-tête avec retour ── */
+    .back {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    .back span { font-weight: 400; font-size: 22px; }
+
+    .divider {
+      width: 360px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.4);
+      margin-bottom: 28px;
+    }
+
+    /* ── Contenu principal ── */
+    .content {
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+    }
+
+    .product-img {
+      width: 340px;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    /* ── Infos produit ── */
+    .info {
+      flex: 1;
+      color: white;
+      padding-top: 8px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 14px;
+    }
+
+    .product-name, .price {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .label, .pct {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #e0d9d0;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .desc strong {
+      font-weight: 600;
+      color: white;
+    }
+
+    /* ── Ligne pincode + disponibilité ── */
+    .pinrow {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .pin-input {
+      flex: 1;
+      padding: 10px 14px;
+      border: 1.5px solid white;
+      background: transparent;
+      color: white;
+      font-size: 14px;
+      border-radius: 3px;
+      outline: none;
+    }
+
+    .pin-input::placeholder { color: rgba(255, 255, 255, 0.7); }
+
+    .dispo-btn {
+      padding: 10px 24px;
+      background: #b03030;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    /* ── Bouton commander ── */
+    .order-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 280px;
+      padding: 14px 0;
+      background: #b03030;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .cart-icon {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }

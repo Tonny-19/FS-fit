@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter une œuvre</title>
+   <link rel="stylesheet" href="ajouterproduit.css" />
+</head>
+<body>
+
+  <div class="back">
+    <span>‹</span>
+    <span class="back-title">ajouter une oeuvre</span>
+  </div>
+
+  <div class="content">
+
+    <!-- Colonne gauche : upload + description -->
+    <div class="left">
+      <div class="upload-zone" onclick="document.getElementById('fileInput').click()">
+        <svg class="arrow-down" viewBox="0 0 80 80" fill="none"
+             stroke="#111" stroke-width="5"
+             stroke-linecap="round" stroke-linejoin="round">
+          <rect x="10" y="22" width="60" height="46" rx="8"/>
+          <line x1="40" y1="8" x2="40" y2="52"/>
+          <polyline points="26,40 40,54 54,40"/>
+        </svg>
+        <input id="fileInput" type="file" accept="image/*" style="display:none">
+      </div>
+      <span class="desc-label">description de l'oeuvre</span>
+      <textarea class="desc-box"></textarea>
+    </div>
+
+    <!-- Colonne droite : champs -->
+    <div class="right">
+      <div class="field">
+        <label>nom de l'oeuvre</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label>prix</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label class="normal">nom de l'artiste</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label class="normal">code</label>
+        <input class="pin" type="text" placeholder="pincode : 1537AR">
+      </div>
+      <div class="btn-row">
+        <button class="add-btn">ajouter</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
